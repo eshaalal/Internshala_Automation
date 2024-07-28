@@ -57,7 +57,7 @@ const coverLetterText = require('./cover'); // Adjust the path if necessary
         console.log('Navigation to Internships page completed.');
 
         // Profile and location names
-        const profileName = ' Front End Development'; // Replace with the desired profile name
+        const profileName = ' Backend Development'; // Replace with the desired profile name
         const locationName = ''; // Leave empty if no location is provided
         const chooseToWorkFromHome = true;
         const choosePartTimeWork = false;
@@ -173,7 +173,7 @@ const coverLetterText = require('./cover'); // Adjust the path if necessary
                 // // Wait for the internships page to reload
                 // await page.waitForNavigation({ waitUntil: 'networkidle2' });
                 try {
-                    await page.waitForSelector('a#backToInternshipsCta', { visible: true });
+                    await page.waitForSelector('a#backToInternshipsCta', { visible: true, timeout: 60000 });
                     await page.click('a#backToInternshipsCta');
                     console.log('Clicked on "Continue applying" button.');
                 } catch (error) {

@@ -102,7 +102,7 @@ const coverLetterText = require('./cover'); // Adjust the path if necessary
         if (internshipContainers.length === 0) {
             console.log('No internships found.');
         } else {
-            await internshipContainers[0].click();
+            await internshipContainers[1].click();
             console.log('Clicked on the first internship heading container.');
             await new Promise(resolve => setTimeout(resolve, 10000));
 

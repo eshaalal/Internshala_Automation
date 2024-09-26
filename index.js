@@ -84,7 +84,7 @@ const coverLetterText = require('./cover'); // Adjust the path if necessary
         await page.waitForSelector('input[value="e.g. Marketing"]', { visible: true });
         await page.type('input[value="e.g. Marketing"]', profileName, { delay: 100 });
         await page.keyboard.press('Enter');
-        console.log(`Typed "${profileName}" into profile search input and pressed Enter.`);
+        console.log(`Typed "${profileName}" into profile search input & pressed Enter.`);
         await new Promise(resolve => setTimeout(resolve, 5000));
 
         if (locationName) {

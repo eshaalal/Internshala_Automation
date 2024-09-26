@@ -28,7 +28,7 @@ const coverLetterText = require('./cover'); // Adjust the path if necessary
         await page.waitForSelector('#modal_email', { visible: true });
         await page.type('#modal_email', 'reshavlalrocks@gmail.com', { delay: 100 });
         await page.waitForSelector('#modal_password', { visible: true });
-        await page.type('#modal_password', 'Great@789', { delay: 100 });
+        await page.type('#modal_password', 'Great@789', { delay: 101 });
         console.log('Email and password entered.');
         await page.waitForSelector('button#modal_login_submit', { visible: true });
         await page.click('button#modal_login_submit');

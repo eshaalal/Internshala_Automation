@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-      hello  I AM AUTOMATION TOOL for internshala
+    Automation Tool
     </>
   )
 }

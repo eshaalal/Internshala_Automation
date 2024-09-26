@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-      HELLO I AM AUTOMATION TOOL for INTERNSHALA 
+    Automation Tool
     </>
   )
 }
